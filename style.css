@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,700&display=swap');
+
+hr {
+  position: absolute;
+  background-color: rgba(0, 130, 120, 0.1);
+  border: none;
+
+  margin-top: 134px;
+  height: 190px;
+  width: 100%;
+  z-index: -5;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title_element {
+  display: flex;
+  flex-flow: column;
+  order: 3;
+
+  margin-top: 70px;
+  text-align: right;
+
+  color: RGB(2, 40, 81);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 50px;
+  font-style: italic;
+  font-weight: 700;
+}
+
+#title1 {
+  margin-right: 115px;
+}
+
+#title2 {
+  margin-top: -12px;
+  margin-right: 85px;
+}
+
+#logo_area {
+  display: flex;
+  flex-flow: row;
+  order: 1;
+}
+
+#museum_logo {
+  padding-top: 70px;
+  padding-left: 60px;
+  height: 110px;
+}
+
+#logo_text {
+  order: 2;
+  padding-top: 92px;
+  padding-left: 20px;
+  padding-right: 10px;
+
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+}
+
+#logotext2 {
+  color: RGB(0, 130, 120);
+  font-weight: 700;
+  margin-top: -3px;
+}
+
+#logotext3 {
+  margin-top: -3px;
+}
+
+main {
+  display: flex;
+  flex-flow: row;
+  padding-top: 25px;
+  padding-bottom: 50px;
+  padding-left: 11%;
+  padding-right: 11%;
+}
+
+.tile {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+#slant_step {
+  height: auto;
+  width: 100%;
+}
+
+#egypt {
+  height: auto;
+  width: 100%;
+}
+
+.captions {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+}
+
+.bodytext {
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+}
+
+#above {
+   display: none;
+}
+
+#below {
+   display: inline-block;
+}
+
+/*
+Set media query to 1130px to prevent title clashing
+and create a seemless view in any viewport
+*/
+@media (max-width: 1130px) {
+  hr {
+    height: 93px;
+    margin-top: 0px;
+  }
+
+  header {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+  }
+
+  .title_element {
+    display: flex;
+    flex-flow: column;
+    order: 1;
+
+    margin-top: 60px;
+    text-align: center;
+
+    font-size: 24px;
+  }
+
+  #title1 {
+    display: inline;
+    margin-right: 0px;
+  }
+
+  #title2 {
+    display: inline;
+    margin-top: -5px;
+    margin-right: 0px;
+  }
+
+  #logo_area {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    order: 2;
+  }
+
+  #museum_logo {
+    padding-top: 45px;
+    padding-left: 0px;
+    height: 85px;
+  }
+
+  #logo_text {
+    order: 3;
+    padding-top: 55px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+  }
+
+  .bodytext {
+    font-size: 18px;
+  }
+
+  main {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    padding-top: 65px;
+    padding-bottom: 25px;
+    padding-left: 22%;
+    padding-right: 22%;
+  }
+
+  .tile {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .bodytext {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  #tile2 {
+    display: flex;
+    flex-flow: column-reverse;
+  }
+
+  #above {
+     display: inline-block;
+  }
+
+  #below {
+     display: none;
+  }
+}
